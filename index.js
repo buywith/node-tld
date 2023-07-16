@@ -30,7 +30,12 @@ var tlds = {
   "myshopify.com": 2,
   "uk": 1,
   "co.uk": 2,
+  "cd": 1,
 }
+
+var get_tlds = function () {
+  return Object.keys(tlds);
+};
 
 var parse_host = function (host) {
   var parts = host.split(".");
@@ -55,3 +60,4 @@ var parse_host = function (host) {
 
 module.exports = parse_url;
 module.exports.parse_host = parse_host;
+module.exports.get_tlds = get_tlds;
