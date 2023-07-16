@@ -31,6 +31,7 @@ var tlds = {
   "uk": 1,
   "co.uk": 2,
   "cd": 1,
+  "ca": 1,
 }
 
 var get_tlds = function () {
