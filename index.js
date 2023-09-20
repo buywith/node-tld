@@ -59,7 +59,6 @@ var parse_host = function (host) {
   };
 };
 
-module.exports = parse_url;
 module.exports.parse_url = parse_url;
 module.exports.parse_host = parse_host;
 module.exports.get_tlds = get_tlds;
