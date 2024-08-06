@@ -39,6 +39,7 @@ var get_tlds = function () {
 };
 
 var parse_host = function (host) {
+	host = host.replace(/(https?:\/\/)?(www.)?/i, '');
   var parts = host.split(".");
   var stack = "", tld_level = 1; //unknown tld are 1st level
   for (var i = parts.length - 1, part; i >= 0; i--) {
