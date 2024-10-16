@@ -32,6 +32,7 @@ var tlds = {
   "co.uk": 2,
   "cd": 1,
   "ca": 1,
+  "ai": 1,
 }
 
 var get_tlds = function () {
